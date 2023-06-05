@@ -1,0 +1,134 @@
+# Ignore Visual Studio files
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.csproj
+*.csproj.user
+.vs/
+bin/
+obj/
+
+# Ignore build artifacts
+*.exe
+*.dll
+*.pdb
+*.obj
+*.bin
+*.apk
+*.apk.*
+*.so
+*.a
+*.pyc
+*.o
+*.lib
+*.tmp
+
+# Ignore NuGet packages folder
+packages/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.sln.docstates
+
+# Ignore logs and debugging files
+*.log
+*.log.*
+*.vspscc
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp.*
+*.tlog
+*.xap
+*.xcuserdata
+*.xcworkspace
+
+# Ignore build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+AnyCPU/
+build/
+
+# Ignore Visual Studio code analysis files
+*.DotSettings
+*.CodeAnalysisLog.xml
+
+# Ignore Resharper files
+_ReSharper.*/
+
+# Ignore test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# Ignore WiX output files
+*.wixobj
+*.wixpdb
+*.wixproj.bak
+
+# Ignore deployment files
+*_deploy/
+
+
+# Ignore Visual Studio files
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.csproj
+*.csproj.user
+*.suo
+*.user
+*.vs/
+*.vssscc
+*.obj
+*.pdb
+*.cache
+*.ilk
+*.pdm
+*.ipch
+*.aps
+*.ncb
+*.sdf
+*.suo
+*.tlh
+*.tli
+*.tlog
+*.manifest
+*.log
+*.pch
+*.res
+*.idb
+*.db
+*.db3
+*.sln.docstates
+
+# Ignore ReSharper files
+_ReSharper*/
+*.sln.DotSettings.user
+
+# Ignore Test Files
+*.testsettings
+test-results/
+[Tt]est[Rr]esult*/
+
+# Ignore build output files
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
