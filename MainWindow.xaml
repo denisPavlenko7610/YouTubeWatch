@@ -10,9 +10,9 @@
         </Grid.RowDefinitions>
 
         <TextBlock Text="Subscribers:" HorizontalAlignment="Left" Foreground="White" Padding="20"/>
-        <Label x:Name="lblSubscriberCount" Grid.Row="1" HorizontalAlignment="Center" FontWeight="Bold" FontSize="24" Foreground="White"/>
+        <Label x:Name="lblSubscriberCount" HorizontalAlignment="Left" FontWeight="Bold" FontSize="18" Foreground="White" Margin="97,10,0,10" Width="134"/>
 
         <TextBlock Text="Views:" Grid.Row="2" HorizontalAlignment="Left" Foreground="White" Margin="0 10 0 0" Padding="20"/>
-        <Label x:Name="lblViewCount" Grid.Row="3" HorizontalAlignment="Center" FontWeight="Bold" FontSize="24" Foreground="White"/>
+        <Label x:Name="lblViewCount" Grid.Row="1" HorizontalAlignment="Left" FontWeight="Bold" FontSize="18" Foreground="White" Padding="20" Margin="55,5,0,52" Width="144"/>
     </Grid>
 </Window>
