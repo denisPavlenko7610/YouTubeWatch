@@ -2,6 +2,7 @@
 using Google.Apis.Services;
 using Google.Apis.YouTube.v3;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -30,7 +31,7 @@ namespace YouTubeRealtimeStats
             youtubeService = new YouTubeService(new BaseClientService.Initializer()
             {
                 HttpClientInitializer = credential,
-                ApplicationName = "YouTube Realtime Stats"
+                ApplicationName = "YouTube Realtime Stats",
             });
         }
 
@@ -40,7 +41,7 @@ namespace YouTubeRealtimeStats
 
             var timer = new System.Timers.Timer();
             timer.Elapsed += async (s, args) => await UpdateStats();
-            timer.Interval = 10000;
+            timer.Interval = 300000;  // 5 min
             timer.Start();
         }
 
@@ -56,6 +57,7 @@ namespace YouTubeRealtimeStats
                 {
                     lblSubscriberCount.Content = channelsListResponse.Items[0].Statistics.SubscriberCount;
                     lblViewCount.Content = channelsListResponse.Items[0].Statistics.ViewCount;
+                    lblVideosCount.Content = channelsListResponse.Items[0].Statistics.VideoCount;
                 });
             }
             catch (Exception ex)
