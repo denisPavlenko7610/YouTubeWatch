@@ -2,7 +2,6 @@
 using Google.Apis.Services;
 using Google.Apis.YouTube.v3;
 using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -16,6 +15,8 @@ namespace YouTubeRealtimeStats
         public YouTubeWatch()
         {
             InitializeComponent();
+            Left = 1828;
+            Top = -35;
 
             UserCredential credential;
             using (var stream = new System.IO.FileStream("secret.json",
