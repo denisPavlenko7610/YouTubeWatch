@@ -56,9 +56,9 @@ namespace YouTubeRealtimeStats
 
                 Dispatcher.Invoke(() =>
                 {
-                    lblSubscriberCount.Content = channelsListResponse.Items[0].Statistics.SubscriberCount;
-                    lblViewCount.Content = channelsListResponse.Items[0].Statistics.ViewCount;
-                    lblVideosCount.Content = channelsListResponse.Items[0].Statistics.VideoCount;
+                    lblSubscriberCount.Content = $"Subscribers: { channelsListResponse.Items[0].Statistics.SubscriberCount:N0}";
+                    lblViewCount.Content = $"Views: {channelsListResponse.Items[0].Statistics.ViewCount:N0}";
+                    lblVideosCount.Content = $"Videos: {channelsListResponse.Items[0].Statistics.VideoCount:N0}";
                 });
             }
             catch (Exception ex)

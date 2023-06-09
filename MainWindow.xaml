@@ -3,19 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="YouTube Realtime Stats" Height="242" Width="241" Loaded="Window_Loaded"
         Background="#333333">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-
-        <TextBlock Text="Subscribers:" HorizontalAlignment="Left" Foreground="White" Padding="20"/>
-        <Label x:Name="lblSubscriberCount" HorizontalAlignment="Left" FontWeight="Bold" FontSize="16" Foreground="White" Margin="97,10,0,10" Width="134"/>
-
-        <TextBlock Text="Views:" Grid.Row="2" HorizontalAlignment="Left" Foreground="White" Margin="0 10 0 0" Padding="20"/>
-        <Label x:Name="lblViewCount" Grid.Row="1" HorizontalAlignment="Left" FontWeight="Bold" FontSize="16" Foreground="White" Padding="20" Margin="55,5,0,52" Width="144"/>
-
-        <TextBlock Text="Videos:" Grid.Row="1" HorizontalAlignment="Left" Foreground="White" Margin="0,84,0,-74" Padding="20"/>
-        <Label x:Name="lblVideosCount" Grid.Row="1" HorizontalAlignment="Left" FontWeight="Bold" FontSize="16" Foreground="White" Padding="20" Margin="73,87,0,-30" Width="144"/>
-    </Grid>
+    <StackPanel Orientation="Vertical">
+        <Label x:Name="lblSubscriberCount" HorizontalAlignment="Left" FontWeight="Bold" FontSize="16" Foreground="White" Margin="10" Width="Auto"/>
+        <Label x:Name="lblViewCount" HorizontalAlignment="Left" FontWeight="Bold" FontSize="16" Foreground="White" Margin="10" Width="Auto"/>
+        <Label x:Name="lblVideosCount" HorizontalAlignment="Left" FontWeight="Bold" FontSize="16" Foreground="White" Margin="10" Width="Auto"/>
+    </StackPanel>
 </Window>
