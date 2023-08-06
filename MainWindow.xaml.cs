@@ -16,7 +16,7 @@ namespace YouTubeRealtimeStats
         {
             InitializeComponent();
             Left = 1828;
-            Top = -35;
+            Top = -20;
 
             UserCredential credential;
             using (var stream = new System.IO.FileStream("secret.json",
