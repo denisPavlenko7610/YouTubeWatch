@@ -4,6 +4,9 @@
         Title="YouTube Realtime Stats" Height="180" Width="241" Loaded="Window_Loaded"
         Background="#333333"
         WindowStyle="None">
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="0" ResizeBorderThickness="5"/>
+    </WindowChrome.WindowChrome>
     <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Center">
         <Label x:Name="lblSubscriberCount" FontWeight="Bold" FontSize="16" Foreground="White" Content="Subscriber Count" Margin="5"/>
         <Label x:Name="lblViewCount" FontWeight="Bold" FontSize="16" Foreground="White" Content="View Count" Margin="5"/>
