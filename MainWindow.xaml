@@ -1,12 +1,12 @@
 ﻿<Window x:Class="YouTubeRealtimeStats.YouTubeWatch"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="YouTube Realtime Stats" Height="242" Width="241" Loaded="Window_Loaded"
+        Title="YouTube Realtime Stats" Height="180" Width="241" Loaded="Window_Loaded"
         Background="#333333"
         WindowStyle="None">
-    <StackPanel Orientation="Vertical">
-        <Label x:Name="lblSubscriberCount" HorizontalAlignment="Left" FontWeight="Bold" FontSize="16" Foreground="White" Margin="10" Width="Auto"/>
-        <Label x:Name="lblViewCount" HorizontalAlignment="Left" FontWeight="Bold" FontSize="16" Foreground="White" Margin="10" Width="Auto"/>
-        <Label x:Name="lblVideosCount" HorizontalAlignment="Left" FontWeight="Bold" FontSize="16" Foreground="White" Margin="10" Width="Auto"/>
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Center">
+        <Label x:Name="lblSubscriberCount" FontWeight="Bold" FontSize="16" Foreground="White" Content="Subscriber Count" Margin="5"/>
+        <Label x:Name="lblViewCount" FontWeight="Bold" FontSize="16" Foreground="White" Content="View Count" Margin="5"/>
+        <Label x:Name="lblVideosCount" FontWeight="Bold" FontSize="16" Foreground="White" Content="Videos Count" Margin="5"/>
     </StackPanel>
 </Window>
