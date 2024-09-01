@@ -9,24 +9,31 @@ namespace YouTubeRealtimeStats
 {
     public partial class YouTubeWatch : Window
     {
+        //RDragon
         private YouTubeService youtubeService;
         private string channelId = "UCP_0FkzSCl-7V0Jv6ZaDszQ";
 
         public YouTubeWatch()
         {
             InitializeComponent();
-            Left = 1828;
-            Top = -20;
+            Left = 1825;
+            Top = 0;
 
+            InitializeAsync();
+        }
+
+        private async Task InitializeAsync()
+        {
             UserCredential credential;
-            using (var stream = new System.IO.FileStream("secret.json",
-                System.IO.FileMode.Open, System.IO.FileAccess.Read))
+            using (var stream = new System.IO.FileStream("secret.json", System.IO.FileMode.Open, System.IO.FileAccess.Read))
             {
-                credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
-                    GoogleClientSecrets.Load(stream).Secrets,
+                var secrets = await GoogleClientSecrets.FromStreamAsync(stream);
+                credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
+                    secrets.Secrets,
                     new[] { YouTubeService.Scope.YoutubeReadonly },
                     "user",
-                    System.Threading.CancellationToken.None).Result;
+                    System.Threading.CancellationToken.None
+                );
             }
 
             youtubeService = new YouTubeService(new BaseClientService.Initializer()

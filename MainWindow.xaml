@@ -7,7 +7,9 @@
     <WindowChrome.WindowChrome>
         <WindowChrome CaptionHeight="0" ResizeBorderThickness="5"/>
     </WindowChrome.WindowChrome>
-    <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Center">
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Center" Width="231">
+        <Label x:Name="ChannelName" HorizontalAlignment="Center" FontWeight="Bold" FontSize="16" Foreground="White" Content="RDragon" Margin="5"/>
+        
         <Label x:Name="lblSubscriberCount" FontWeight="Bold" FontSize="16" Foreground="White" Content="Subscriber Count" Margin="5"/>
         <Label x:Name="lblViewCount" FontWeight="Bold" FontSize="16" Foreground="White" Content="View Count" Margin="5"/>
         <Label x:Name="lblVideosCount" FontWeight="Bold" FontSize="16" Foreground="White" Content="Videos Count" Margin="5"/>
